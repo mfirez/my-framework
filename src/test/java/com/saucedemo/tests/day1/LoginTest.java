@@ -1,10 +1,15 @@
 package com.saucedemo.tests.day1;
 
 import com.saucedemo.page.LoginPage;
-import com.saucedemo.tests.testNG.TestBase;
+import com.saucedemo.page.ProductsPage;
+import com.saucedemo.tests.TestBase;
 import com.saucedemo.utilities.ConfigurationReader;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class LoginTest extends TestBase{
 
@@ -13,7 +18,9 @@ public class LoginTest extends TestBase{
 
 
         LoginPage loginPage = new LoginPage();
+        loginPage.login();
 
+        /*
         loginPage.usernameInput.sendKeys(ConfigurationReader.get("username"));
         Thread.sleep(2000);
 
@@ -24,6 +31,9 @@ public class LoginTest extends TestBase{
 
         Assert.assertTrue(driver.getCurrentUrl().contains("https://www.saucedemo.com/inventory.html"));
 
+         */
 
     }
+
+
 }

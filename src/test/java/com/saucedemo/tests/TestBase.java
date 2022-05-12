@@ -1,4 +1,4 @@
-package com.saucedemo.tests.testNG;
+package com.saucedemo.tests;
 
 import com.saucedemo.utilities.ConfigurationReader;
 import com.saucedemo.utilities.Driver;
